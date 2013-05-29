@@ -1,0 +1,27 @@
+auto: true
+markdown: rdiscount
+pygments: true
+
+title: Atlantageek
+
+url: http://www.atlantageek.com
+
+permalink: /:year/:month/:day/:title/
+
+author:
+    name: Tommie Jones
+    email: atlantageek@gmail.com
+    github: atlantageek
+    twitter: atlantageek
+    gravatar: http://www.gravatar.com/avatar/2eff6901bd6599cd9a6f808a2a960b46.png
+
+comments:
+    provider: disqus
+    disqus:
+        short_name: atlantageek
+        
+analytics:
+    provider: google 
+    google: 
+        tracking_id: UA-256169-2
+        domain: 'atlantageek.com'

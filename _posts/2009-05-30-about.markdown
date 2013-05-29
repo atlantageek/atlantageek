@@ -1,0 +1,19 @@
+--- 
+layout: page
+status: publish
+published: true
+title: About
+author: atlantageek
+author_login: atlantag
+author_email: atlantageek@gmail.com
+wordpress_id: 2
+wordpress_url: http://www.atlantageek.com/?page_id=2
+date: 2009-05-30 05:46:28 -04:00
+categories: []
+
+tags: []
+
+comments: []
+
+---
+This is an example of a WordPress page, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many pages like this one or sub-pages as you like and manage all of your content inside of WordPress.

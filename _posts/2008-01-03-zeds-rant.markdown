@@ -1,0 +1,24 @@
+--- 
+layout: post
+status: publish
+published: true
+title: Zed's Rant.
+author: atlantageek
+author_login: atlantag
+author_email: atlantageek@gmail.com
+wordpress_id: 7
+wordpress_url: http://www.atlantageek.com/?p=7
+date: 2008-01-03 21:52:13 -05:00
+categories: 
+- Ruby
+tags: 
+- Ruby
+- rails
+comments: []
+
+---
+I just read Zed's rant. (Zed is the developer of Mongrel, a recent &amp; popular web server written in Ruby)  Interesting stuff. Not just because he obviously has an Axe to grind but he does give a look at all the stuff going on behind the scenes with Ruby and Rails.
+
+One item that caught my interest was the assertion that Japanese developers ignoring patch submissions from developers. Ruby does have some major performance issues. There is a reason there are at least 2 virtual machines (Rubinus and JRuby) being developed to compete with the current Ruby. And I do wonder if part of the problem is the (spoken) language barrier between the core team and a good chunk of the user market.
+
+Maybe it is time for the language to branch.
