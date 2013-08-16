@@ -3,12 +3,10 @@ layout: post
 status: publish
 published: true
 title: Rocking ltree on postgresql
+date: 2012-10-25 22:46:21 -04:00
 author: atlantageek
 author_login: atlantag
 author_email: atlantageek@gmail.com
-wordpress_id: 93
-wordpress_url: http://www.atlantageek.com/?p=93
-date: 2012-10-25 22:46:21 -04:00
 categories: 
 - Uncategorized
 tags: 

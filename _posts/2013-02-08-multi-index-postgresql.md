@@ -1,13 +1,16 @@
 ---
 layout: post
 title: "Why multi-field indexes in postgresql still matter."
-description: ""
-category: 
-tags: []
-date: 2013-02-08 14:49:51 -04:00
+author: atlantageek
+author_login: atlantag
+author_email: atlantageek@gmail.com
 categories: 
-- soapbox
-tags: []
+- Uncategorized
+tags: 
+- postgres
+- postgresql
+- databases
+comments: []
 
 ---
 
