@@ -23,5 +23,4 @@ comments:
 analytics:
     provider: google 
     google: 
-        tracking_id: UA-256169-2
-        domain: 'atlantageek.com'
+        tracking_id: 'UA-256169-2'

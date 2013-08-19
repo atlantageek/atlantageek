@@ -8,6 +8,7 @@ layout: layout
     {% for post in site.posts %}
         {% for tag in post.tags %}
             {% if tag == page.tag %}
+AAA
                 <div class="row">
                   <div class="span2">
                     <a href="{{ post.url }}" >
@@ -28,6 +29,7 @@ layout: layout
                     <p><a href="{{ post.url }}">Read more</a></p>
                   </div>
                 </div>
+BBB
             {% endif %}
         {% endfor %}
     {% endfor %}
