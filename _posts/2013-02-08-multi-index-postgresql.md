@@ -10,8 +10,6 @@ categories:
 tags: []
 
 ---
-{% include JB/setup %}
-
 
 ## Why wouldn't it.
 As of 8.1 postgresql includes the concept of a bitmap heap. A bitmap heap as implemented in postgresql is an array/matrix of bits stored in ram with each cell representing a record in the table being queried. Using the conditions included in the query the cell for each record is activated or deactivated. to show that these records should be included in the result of the query's search.  At the end of the query the bitmap heap is what determines wich records will be shown.  This bitmap can be built by scanning different indexes based on the query criteria 

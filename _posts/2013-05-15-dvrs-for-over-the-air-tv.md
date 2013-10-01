@@ -1,9 +1,19 @@
 ---
 layout: post
-title: "DVRs for over the air TV"
-description: "Tivo and other DVRs"
-category: 
-tags: [tv]
+status: publish
+published: true
+title: DVRs for over the air TV
+author: atlantageek
+author_login: atlantag
+author_email: atlantageek@gmail.com
+date: 2013-05-12 22:46:21 -04:00
+categories: 
+- Uncategorized
+tags: 
+- postgres
+- postgresql
+- databases
+comments: []
 ---
 #DVRs for over the air TV
 

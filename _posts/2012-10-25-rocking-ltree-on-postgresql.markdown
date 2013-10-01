@@ -18,6 +18,7 @@ tags:
 comments: []
 
 ---
+
 Postgresql 9.1 Now ships with a module called ltree. This is a cool postgresql that allows you to model hierarchies in you database and leverages the GIST indexing mechanism built into postgres.
 Assume you are modeling several organizations:
 

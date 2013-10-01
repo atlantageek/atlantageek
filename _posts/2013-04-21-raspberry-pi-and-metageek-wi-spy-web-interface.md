@@ -1,15 +1,27 @@
 ---
 layout: post
-title: "Raspberry PI and metageek Wi Spy web interface"
-description: "Building A Web Interface for the Wi-Spy and using Raspberry PI as the web server."
-category: 
-tags: [raspberrypi wispy metageek websockets]
+status: publish
+published: true
+title: Raspberry PI and metageek Wi Spy web interface
+author: atlantageek
+author_login: atlantag
+author_email: atlantageek@gmail.com
+wordpress_id: 93
+wordpress_url: http://www.atlantageek.com/?p=93
+date: 2012-10-25 22:46:21 -04:00
+categories: 
+- Uncategorized
+tags: 
+- postgres
+- postgresql
+- databases
+comments: []
+
 ---
-{% include JB/setup %}
+
 
 ##So what is it.
 Its a web interface to a metageek spectrum analyzer that runs on a wi-spy. I have a [short video](http://www.youtube.com/watch?v=jj9u6VtkM3Y) demostrating an early version of the software.  
-<iframe width="420" height="315" src="http://www.youtube.com/embed/jj9u6VtkM3Y" frameborder="0" allowfullscreen></iframe>
 
 Currently there are markers and the beginning of a heatmap.
 
