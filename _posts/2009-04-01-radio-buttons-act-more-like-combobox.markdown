@@ -19,12 +19,11 @@ comments: []
 Normally what I would do with radio buttons is to look for a click event and set variables accordingly.&nbsp; However there is another way to use radio button if you are operating more in a 'filling out a form' approach.
 
 Here it is
-<pre>
-<?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
-<mx:Label text="{'Radio Selected :'+ rg.selectedValue.toString()}"/>
-<mx:RadioButtonGroup id="rg"/>
-<mx:RadioButton x="10" y="26" value="RADIO 1" selected="true" label="radio1" groupName="rg"/>
-<mx:RadioButton x="10" y="52" value="RADIO 2" label="radio2" groupName="rg"/>
-</mx:Application></pre>
+	<?xml version="1.0" encoding="utf-8"?>
+	<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	<mx:Label text="{'Radio Selected :'+ rg.selectedValue.toString()}"/>
+	<mx:RadioButtonGroup id="rg"/>
+	<mx:RadioButton x="10" y="26" value="RADIO 1" selected="true" label="radio1" groupName="rg"/>
+	<mx:RadioButton x="10" y="52" value="RADIO 2" label="radio2" groupName="rg"/>
+	</mx:Application></pre>
 It now works more like a combobox instead of individual buttons. The label will alwys show the button group's selected Value.

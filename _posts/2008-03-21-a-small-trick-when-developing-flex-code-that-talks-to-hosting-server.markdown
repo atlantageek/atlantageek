@@ -22,16 +22,15 @@ I often develop my flex code on a machine that is not running a web server. So I
 This can be a pain because before you checkin the code you have to remember to change the method of pulling the IP address.
 
 So here is my solution
-<pre>
-   var domain:String=mx.utils.URLUtil.getServerName(url);
-  var port_nbr:int=mx.utils.URLUtil.getPort(url);
- if (flash.system.Security.sandboxType == "localTrusted")
-  {
-    Alert.show("In Development mode:"+domain+","+port);
-    webService.wsdl="http://10.0.0.60:3000/services/wsdl";
-  }
-  else
-  {
-     webService.wsdl="http://"+domain+":"+port+"/services/wsdl";
-  }</pre>
+	var domain:String=mx.utils.URLUtil.getServerName(url);
+	var port_nbr:int=mx.utils.URLUtil.getPort(url);
+	if (flash.system.Security.sandboxType == "localTrusted")
+	{
+		Alert.show("In Development mode:"+domain+","+port);
+		webService.wsdl="http://10.0.0.60:3000/services/wsdl";
+	}
+	else
+	{
+		webService.wsdl="http://"+domain+":"+port+"/services/wsdl";
+	}
 Obviously this is for web services but this technique can be used for sockets as well.

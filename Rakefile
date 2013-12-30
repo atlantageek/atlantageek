@@ -19,8 +19,39 @@ end
 
 desc "Startup Jekyll"
 task :start do
-  sh "jekyll --server"
+  sh "jekyll server"
 end
 
 task :default => :start
+
+desc 'Build and deploy'
+task :deploy => :build do
+  user = 'atlantag'
+  host = 'atlantageek@gmail.com'
+  directory = '/home/atlantag/public_html/wp'
+  sh "rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}"
+end
+
+desc 'Build site with Jekyll'
+task :build => :clean do
+  submodule('update')
+  jekyll('build') #('--lsi')
+end
+
+desc 'Clean up generated site'
+task :clean do
+  cleanup
+end
+
+def cleanup
+  sh 'rm -rf _site'
+end
+
+def jekyll(opts = '')
+  sh 'jekyll ' + opts
+end
+
+def submodule(opts = '')
+  sh 'git submodule ' + opts
+end
 
