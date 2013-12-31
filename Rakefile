@@ -27,7 +27,7 @@ task :default => :start
 desc 'Build and deploy'
 task :deploy => :build do
   user = 'atlantag'
-  host = 'atlantageek@gmail.com'
+  host = 'atlantageek.com'
   directory = '/home/atlantag/public_html/wp'
   sh "rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}"
 end
