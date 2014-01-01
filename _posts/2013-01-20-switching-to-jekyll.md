@@ -7,7 +7,7 @@ author_email: atlantageek@gmail.com
 categories: 
 - blog
 tags: 
-comments: []
+comments: true
 ---
 
 ##My first post using jekyll

@@ -14,7 +14,7 @@ categories:
 tags: 
 - Ruby
 - Mysql
-comments: \[\]
+comments: true
 
 ---
 Normally in rails you would configure a production, test and development database in the database.yml file.  If some of your rails data comes from a different database you can configure it in database.yml as well.  For example I wanted two rails applications to synchronize their databases occassionally.

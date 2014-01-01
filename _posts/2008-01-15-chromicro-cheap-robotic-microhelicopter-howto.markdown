@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 <a href="http://www.pabr.org/chromicro/doc/chromicro.en.html">ChRoMicro - Cheap Robotic Microhelicopter HOWTO</a>

@@ -13,7 +13,7 @@ categories:
 - flex
 tags: []
 
-comments: 
+comments: true
 - id: 1055
   author: Ranganathan Sridharan
   author_email: rangans@gmail.com

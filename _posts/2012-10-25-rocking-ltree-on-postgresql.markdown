@@ -13,7 +13,7 @@ tags:
 - postgres
 - postgresql
 - databases
-comments: []
+comments: true
 
 ---
 

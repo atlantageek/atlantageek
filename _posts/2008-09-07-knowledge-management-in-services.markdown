@@ -13,7 +13,7 @@ categories:
 - IT Business
 tags: []
 
-comments: []
+comments: true
 
 ---
 Just came back from a competitive bidding event. My company was one of the 5 suppliers that were bidding on replacing the customers test equipment with our equipment. We interviewed everyone from the guys in the back office to the guys in the field and the interviewees scored us on the types of questions we asked.

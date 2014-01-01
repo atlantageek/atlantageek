@@ -13,7 +13,7 @@ categories:
 - flex
 tags: []
 
-comments: []
+comments: true
 
 ---
 <a href="http://www.adobe.com/devnet/flex/articles/fig_pt3_02.html">Adobe - Developer Center : Designing for Flex &ndash; Part 3: Structuring your application</a>

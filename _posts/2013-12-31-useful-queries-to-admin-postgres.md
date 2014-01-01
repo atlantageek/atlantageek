@@ -7,6 +7,7 @@ tags:
 - postgres
 - postgresql
 - databases
+comments: true
 
 ---
 

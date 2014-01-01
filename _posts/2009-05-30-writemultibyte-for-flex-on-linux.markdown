@@ -15,7 +15,7 @@ categories:
 - linux
 tags: []
 
-comments: []
+comments: true
 
 ---
 writeMultiByte is not working for linux (though it is fine in Windows) in Flashplayer 10.&nbsp; It failed for me in the ByteArray class and I've seen other postings that the issue exist for the binarySocket class as well. At least for the us-ascii encoding.

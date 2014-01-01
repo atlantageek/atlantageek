@@ -13,7 +13,7 @@ categories:
 - flex
 tags: []
 
-comments: []
+comments: true
 
 ---
 Working a lot with ItemEditors in DataGrids.

@@ -6,7 +6,7 @@ categories:
 tags:
 - node.js
 - raspberry pi
-
+comments: true
 ---
 ![LCD display of bitcoin price](/img/posts/IMG_20131230_003453.jpg)
 

@@ -15,7 +15,7 @@ tags:
 - book
 - data visualization
 - java
-comments: []
+comments: true
 
 ---
 I just got this book a few days ago and I'm not really that impressed.  It seems it is focusing on a Java tool called 'Processing' that. He spends more time on how to write code for this tool than on designing data visualization interfaces.

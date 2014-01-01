@@ -14,7 +14,7 @@ categories:
 tags: 
 - resume
 - employee
-comments: []
+comments: true
 
 ---
 A good essay on how to find a good programmer.

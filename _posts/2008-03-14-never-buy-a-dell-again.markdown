@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: 
+comments: true
 - id: 38
   author: Brian
   author_email: sciurus@gmail.com

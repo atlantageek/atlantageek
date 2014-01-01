@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 A list of websites featuring Bank Owned Properties.

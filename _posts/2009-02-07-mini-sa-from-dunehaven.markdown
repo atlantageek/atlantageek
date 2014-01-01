@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 I just got a mini SA board from dunehven.com. My goal was to write a flex UI for a spectrum analyzer. Somr ething I've done at work but unable to demo or discuss. So I've been looking for a cheap spectrum analyzer to supply the  rf data.  I've been considering a wi-spy but am unable to bring myself to buying a $200 device for this project.  Ebay never gave me joy on finding a cheaper model.  I've bidded on 2 or 3 models bug gave up at 120 dollars.

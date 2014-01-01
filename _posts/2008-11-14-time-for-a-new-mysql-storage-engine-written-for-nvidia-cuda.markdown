@@ -14,7 +14,7 @@ categories:
 - cuda
 tags: []
 
-comments: []
+comments: true
 
 ---
 I always assumed DBs were IO bound but my work at Retek and now from what I am reading here on <a href="http://www.cse.ust.hk/catalac/papers/gpujoin_sigmod08.pdf" title="join performance with CUDA">join performance </a>seems like it might be more CPU bound. Maybe its time for a Nvidia Cuda based storage engine for mysql.

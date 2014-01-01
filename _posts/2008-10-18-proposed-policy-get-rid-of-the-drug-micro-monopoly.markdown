@@ -13,7 +13,7 @@ categories:
 - soapbox
 tags: []
 
-comments: []
+comments: true
 
 ---
 <strong>Require multiple suppliers for any FDA approved drugs.</strong>

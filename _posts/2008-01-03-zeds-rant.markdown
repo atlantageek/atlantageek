@@ -14,7 +14,7 @@ categories:
 tags: 
 - Ruby
 - rails
-comments: []
+comments: true
 
 ---
 I just read Zed's rant. (Zed is the developer of Mongrel, a recent &amp; popular web server written in Ruby)  Interesting stuff. Not just because he obviously has an Axe to grind but he does give a look at all the stuff going on behind the scenes with Ruby and Rails.

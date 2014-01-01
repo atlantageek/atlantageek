@@ -7,7 +7,7 @@ tags:
 - postgres
 - postgresql
 - databases
-
+comments: true
 ---
 
 You've finally got some traction with your SaaS project.  Lots of large customers and things are moving along rather well. A few of your customers complain that the system is not as fast as it use to be but that's normal. You up the hardware, add a few indexes and things seem steady. 

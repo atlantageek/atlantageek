@@ -15,7 +15,7 @@ categories:
 - development
 tags: []
 
-comments: []
+comments: true
 
 ---
 I was getting Security Sandbox violations in my flash log. I was trying to read a local file and to connect to the network. This is for development reasons only. The final version is all web. Anyway to resolve this on my linux system I created a file with the top level paths that ended in .cfg. You can place  the file in the dir: /home/{user}/.macromedia/Flash_Player/#Security/FlashPlayerTrust directory.

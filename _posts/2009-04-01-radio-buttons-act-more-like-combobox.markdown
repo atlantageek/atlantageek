@@ -13,7 +13,7 @@ categories:
 - flex
 tags: []
 
-comments: []
+comments: true
 
 ---
 Normally what I would do with radio buttons is to look for a click event and set variables accordingly.&nbsp; However there is another way to use radio button if you are operating more in a 'filling out a form' approach.

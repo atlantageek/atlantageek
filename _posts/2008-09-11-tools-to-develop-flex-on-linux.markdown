@@ -14,7 +14,7 @@ categories:
 - linux
 tags: []
 
-comments: []
+comments: true
 
 ---
 Sometimes you need to write a debug log when developing flex. The best way to do that in linux is first configure your ~/mm.cfg file with the following:

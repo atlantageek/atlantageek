@@ -14,7 +14,7 @@ categories:
 tags: 
 - email
 - knowledge management
-comments: []
+comments: true
 
 ---
 I've recently read Datawocky's article on <a href="http://anand.typepad.com/datawocky/2008/07/stop-email-overload-and-break-silos-using-wikis-blogs-and-im.html">Replacing Email with blogs, wikis and IM</a>. Its has some good ideas however the devil is in the details. The advantage of email is that it is convenient for the creator. If it is not convenient for the creator then they are less likely to create/send the data. It might be correct that the 3 system approach would be easier to retrieve data but if it reduces the amount of electronic data then it only hurts the communications.

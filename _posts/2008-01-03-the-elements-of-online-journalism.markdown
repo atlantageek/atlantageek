@@ -15,7 +15,7 @@ tags:
 - online journalism
 - book
 - Christmas
-comments: []
+comments: true
 
 ---
 One of the fringe benefits of married life is having someone to get you those Christmas gifts you can't bring your self to buy. And for me those gifts are books. And the week between Christmas and New Year is the best time to read them.

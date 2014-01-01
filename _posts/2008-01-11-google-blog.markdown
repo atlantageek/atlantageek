@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 Found an interesting blog called <a href="http://blogoscoped.com">Google blogscoped</a> .  Looks like its all about the google statistics.

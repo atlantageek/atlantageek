@@ -12,7 +12,7 @@ categories:
 tags: 
 - TV
 - Cable
-comments: []
+comments: true
 ---
 #DVRs for over the air TV
 

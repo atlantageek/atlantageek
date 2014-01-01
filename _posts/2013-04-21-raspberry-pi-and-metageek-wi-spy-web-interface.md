@@ -13,7 +13,7 @@ categories:
 - Raspberry PI
 tags: 
 - raspberry pi
-comments: []
+comments: true
 
 ---
 

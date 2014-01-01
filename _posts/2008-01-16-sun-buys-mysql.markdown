@@ -15,7 +15,7 @@ tags:
 - Mysql
 - sun
 - open source
-comments: []
+comments: true
 
 ---
 Excellent news. Sun acquires Mysql.

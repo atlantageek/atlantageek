@@ -14,7 +14,7 @@ categories:
 - flash
 tags: []
 
-comments: []
+comments: true
 
 ---
 I often develop my flex code on a machine that is not running a web server. So I have to hardcode the IP of a working server when I need to pull data from the hosting server.

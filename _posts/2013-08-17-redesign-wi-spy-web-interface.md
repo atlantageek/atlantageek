@@ -12,7 +12,7 @@ categories:
 tags: 
 - rf
 - websockets
-comments: []
+comments: true
 
 ---
 

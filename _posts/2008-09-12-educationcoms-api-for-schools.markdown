@@ -13,7 +13,7 @@ categories:
 - API
 tags: []
 
-comments: []
+comments: true
 
 ---
 Now you can integrate school information into you mashup with education.com's school api.&nbsp; Get your key <a href="http://www.education.com/webservice/request">here</a>.

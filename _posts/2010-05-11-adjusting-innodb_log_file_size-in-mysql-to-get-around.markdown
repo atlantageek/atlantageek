@@ -15,7 +15,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 I was getting "ERROR 1033 (HY000): Incorrect information in file: './realworx_production/analyzers.frm'" whenever I tried to adjust my mysql innodb parameters and run a query.

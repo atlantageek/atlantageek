@@ -13,7 +13,7 @@ categories:
 - Uncategorized
 tags: []
 
-comments: []
+comments: true
 
 ---
 [Outsourcing the scaffolding](http://blog.kischuk.com/2008/08/11/outsource-the-scaffolding/trackback/) is an article from a fellow Atlantian discussing how best to oursource code. His thesis is that you should only outsource the the initial version or core product.  Once you get into the details where the problem is nolonger simple you need to bring it in house.
