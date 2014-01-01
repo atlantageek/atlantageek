@@ -5,7 +5,7 @@ author: atlantageek
 author_login: atlantag
 author_email: atlantageek@gmail.com
 categories: 
-- Uncategorized
+- Programming
 tags: 
 - postgres
 - postgresql

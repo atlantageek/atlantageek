@@ -5,11 +5,8 @@ author: atlantageek
 author_login: atlantag
 author_email: atlantageek@gmail.com
 categories: 
-- Uncategorized
+- blog
 tags: 
-- postgres
-- postgresql
-- databases
 comments: []
 ---
 

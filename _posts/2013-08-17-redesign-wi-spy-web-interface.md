@@ -10,9 +10,8 @@ date: 2013-08-17 22:46:21 -04:00
 categories: 
 - Uncategorized
 tags: 
-- postgres
-- postgresql
-- databases
+- rf
+- websockets
 comments: []
 
 ---

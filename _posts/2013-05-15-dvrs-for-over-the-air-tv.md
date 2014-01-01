@@ -8,11 +8,10 @@ author_login: atlantag
 author_email: atlantageek@gmail.com
 date: 2013-05-12 22:46:21 -04:00
 categories: 
-- Uncategorized
+- Tech
 tags: 
-- postgres
-- postgresql
-- databases
+- TV
+- Cable
 comments: []
 ---
 #DVRs for over the air TV

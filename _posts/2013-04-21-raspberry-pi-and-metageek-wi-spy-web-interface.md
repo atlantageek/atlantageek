@@ -10,11 +10,9 @@ wordpress_id: 93
 wordpress_url: http://www.atlantageek.com/?p=93
 date: 2013-04-20 22:46:21 -04:00
 categories: 
-- Uncategorized
+- Raspberry PI
 tags: 
-- postgres
-- postgresql
-- databases
+- raspberry pi
 comments: []
 
 ---

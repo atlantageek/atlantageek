@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Sharding a MultiTenant SaaS app"
+categories:
+- programming
+tags:
+- postgres
+- postgresql
+- databases
+
 ---
 
 You've finally got some traction with your SaaS project.  Lots of large customers and things are moving along rather well. A few of your customers complain that the system is not as fast as it use to be but that's normal. You up the hardware, add a few indexes and things seem steady. 
@@ -9,9 +16,10 @@ All of a sudden your email/support staff is overwhelmed by customers complaining
 There are a few ways to shard the database. Some apps are sharded by time and others are sharded by grouping users. A multi-tenant app lends itself to being sharded by tenant. The idea being that each individual tenant would not want to share data with other tenant. (Notice I said tenant and not users. I assume that users who collaborate would be part of the same tenant.
 
 There are also multiple solutions to how data is sharded. There are three approaches. 
-* webserver
-* app
-* database partitioning
+
+*  webserver
+*  app
+*  database partitioning
 
 Either solution requires several databases/tables for each shard.
 
@@ -26,8 +34,9 @@ The focus will be on the Database partitioning approach.
 Unlike other approaches to sharding, the database partitioning approach does not shard the whole database. Instead you identify certain tables that are the culprit in the drop of the performance and then use partitioning on that table. Partitioning is only beneficial for large tables. If the table is larger than the memory of your database machine then its a canidate for partitioning.
 
 To demonstrate a technique assume that we are working on an accounting application. The largest table is the transaction table. The job_transaction table looks like this
+
 	CREATE SEQUENCE id_seq;
-	create table job_transactions (id int NOT NULL DEFAULT nextval('id_seq'), name varchar, description text, tenant_id integer);
+	CREATE TABLE job_transactions (id int NOT NULL DEFAULT nextval('id_seq'), name varchar, description text, tenant_id integer);
 	ALTER TABLE job_transactions_seq owned by job_transactions.id;
 
 
