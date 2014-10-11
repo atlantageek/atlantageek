@@ -60,6 +60,7 @@ To send this trap we do the following
 snmptrap -v 1 -m +TRAP-TEST-MIB -c public localhost TRAP-TEST-MIB::demotraps localhost 6 17 '' SNMPv2-MIB::sysLocation.0 s "You were here"
 
 Breaking down the line is as follows.
+
 * 'snmptrap' - command to send a trap
 * '-v 1' - We are sending a SNMP version 1 trap
 * '-m +TRAP-TEST-MIB' Look in the config path and load the mib file 'TRAP-TEST-MIB'
@@ -71,4 +72,4 @@ Breaking down the line is as follows.
 * 17 - Trap ID , you see it in the mib file above.
 
 Complete. 
-Next step is a server to see the trap.
+[Next step is a server to see the trap. ](/2014/08/23/snmp-trap-listener-in-node3)

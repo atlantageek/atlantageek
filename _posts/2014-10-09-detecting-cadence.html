@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Detecting the cadence of your client's data."
+categories:
+- programming
+- snmp
+tags:
+- node.js
+comments: true
+---
+Often a SaaS company is dependent on the periodic data from its clients. Its challenging enough just to get your clients set up and sending data. However in the interest of client service and to predict that there is trouble you often want to detect when data delivery has being interrupted. This could either be something that broke but not identified yet or the client is planning on firing you and you may want to go on the offensive to win them back. Detecting interruptions is not that difficult except in the SaaS world you’re often playing a numbers game.  You have hundreds or thousands of clients. These clients could each have their own Cadence of data delivery (daily, weekly, monthly, every other tuesday.) So its difficult to identify when a client is late. 
+<p>
+I’ve seen a similar problem at work and we tried multiple solutions but only one allowed us to not have to scan hundreds of table rows and graphs to identify interruptions in data delivery. The most recent solution has had some success by calculating a score based on the predicted cadence and the amount of time its been since the last data delivery. 
+<p>
+Previous solutions attempted to show a graph so the user could see at a glance if a data delivery was late.  But this was error prone. Other attempts were made to classify clients as daily/weekly/monthly because these were the terms we used. . Thinking that tracking daily uploads would look something like this.
+<p>
+Daily: <span class="bar"> 1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1 </span>
+<p>
+Weekly: <span class="bar"> 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0, 1,0,0,0,0,0,0</span>
+<p>
+Monthly:<span class="bar"> 1,0,0,0,0,0,0, 0,0,0,0,0,0,0, 0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0, 1,0,0,0,0,0,0, 0,0,0,0,0,0,0, 0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0</span>
+<p>
+
+But the data was never this clean. Days would be <br>skipped
+<span class="bar"> 1,1,1,0,1,0,0,1,1,0,1,1,0,0,1,1,1,0,1,0,0,1,1,1,0,1,0,0,1,1,1,0,1,0,0,1,1,1,1,1,0,0,0,0,1,1,1,0,0,1,1,0,0,1,0,0,1,0,1,1,1 </span>
+or delayed <span class="bar"> 1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,1,0,0 </span>
+or both <span class="bar"> 1,1,0,1,0,1,0,1,0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,1,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,0 </span>
+<p>
+And few of our clients were sending data this often. Most sent data weekly, but not necessarily on the same day of the week.
+ <span class="bar"> 1,0,0,0,0,0,0, 0,0,1,0,0,0,0, 1,0,0,0,0,0,0, 0,0,0,0,0,0,1, 1,0,0,1,0,0,0, 0,0,1,0,0,0,0, 0,0,0,1,0,0,0, 0,1,0,0,0,0,0</span>
+<p>
+Eventually we realized that each client had its own cadency and its own level of consistency. We needed a way to identify a client's cadence and consistency. Then use those number to determine if the current gap is normal or an anomoly. <p> 
+We had data. We knew on what days the client sent us the data. We could identify the average and standard deviation of how long a client would go without sending us data. <br>
+
+So with this method I can calculate the number of standard deviations the gap for that paticular day. This chart is looking back over time with the  most recent data points being to the most right.
+<span class="composite"> 1,0,0,0,0,0,0, 0,0,1,0,0,0,0, 1,0,0,0,0,0,0, 0,0,0,0,0,0,1, 1,0,0,1,0,0,0, 0,0,1,0,0,0,0, 0,0,0,1,0,0,0, 0,1,0,0,0,0,0</span> Whenever the blue line crossed went above 1.0 then that means the current gap was larger than 85% of the previous gaps.  In our usage we contact the client when the standard deviation hits 2. This means the gap is 97% larger. Sorting the list of clients by this table gives us an idea of which clients need to be contacted.<p>
+
+After 3 months the report has been reasonably successful. Our customer service represenatves are rarely blindsided by calls from clients asking why isnt new data appearing in their accounts. In actuality since we often cal the client we're finding that roughly 50% of the time the client knows their data transfer is down and the other 50% of the time they did not realize that they had stopped sending us data. <p>
+
+Of course this only adds one dimension. There are requests to add data volume to the score. And customer's whose cadence stretches across a period of a year are difficult to predict. We also have to be careful with new clients who we don't have any historical data with. However this report provides the confidence in that our existing client base is covered so we can spend more time getting our new clients brought into our system.
+
+    <script type="text/javascript">
+    $(function() {
+
+        /* Use 'html' instead of an array of values to pass options 
+        to a sparkline with data in the tag */
+        $('.bar').sparkline('html', {type: 'bar'} );
+        $('.composite').sparkline('html', {type: 'tristate'} );
+        $('.composite').sparkline([-1,-0.85,-0.7,-0.55,-0.4,-0.25,-0.1, 0,0.15,0.3,-1.0,-0.85,-0.7,-0.55, -1.0,-0.85,-0.7,-0.55,-0.4,-0.25,-0.1, 0,0.15,0.3,0.45,0.6,0.75,-1.0, -1.0,-0.85,-0.7,-1,-0.85,-0.7,-0.55, -0.4,-0.25,-1.0,-0.85,-0.7,-0.55,-0.40, -0.25,-0.1,0,-1.0,-0.85,-0.7,-0.55, -0.4,-1.0,-0.85,-0.70,-0.55,-0.4,-0.25], {type: 'line', composite: true, fillColor: null } );
+    });
+    </script>
+
