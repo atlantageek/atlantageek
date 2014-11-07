@@ -91,7 +91,7 @@ The correlation can be adjusted by subtracting out the factors correlation. For 
 
 This results in the following adjusted correlation
 
-![correlation](../img/adj_correlation.png)
+![correlation](/img/adj_correlation.png)
 
 The correlation for 14,21 and 28 days is much weaker when we take the 7 day correlation out.
 
@@ -99,7 +99,7 @@ Based on this graph we realized that we need to aggregate up 7 days of data to g
 
 This was a simple case but what does a monthly cycle look like.
 
-![correlation](../img/monthly_correlation.png)
+![correlation](/img/monthly_correlation.png)
 
 In this case the data is send on the first of every month.
 
